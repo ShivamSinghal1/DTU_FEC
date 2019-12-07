@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= sub %> Books.Notes.Question Paper</title>
+  <meta charset="utf-8" name="description" content="Foundation Elective Course FEC for Delhi Technological University
+  Notes, Books and Previous Year Question Paper Available for Subject - <%=sub%>">
+  <meta charset="utf-8" name="keywords" content="DTU, DTUFec,Fec, Foundation, Elective, Course, Environmental, Papers, Books, Notes, Logical, Science, Communication, Business, French,German,Japanese, Financial,Statement, Analysis,Technical,Presentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/stylesheet/subject.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">DTU FEC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target= "_blank" href="https://play.google.com/store/apps/details?id=com.abhishekbabbar1989.dtufec">Get an Android <i class="fa fa-android"></i> App</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Developer</a>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Change Subject
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <%subjects.forEach(function(subject){
+              if(subject.name == sub){%>
+                <a class="dropdown-item disabled" href="/<%=subject.name%>"><%=subject.name%></a>
+              <%}
+              else{%>
+                <a class="dropdown-item" href="/<%=subject.name%>"><%=subject.name%></a>
+              <%}});%>
+          </div>
+        </li>
+      </ul>
+        <a class="nav-link" target= "_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScvtkm8vfktc-ps9gp1aIqx47LR4WPUnFOM8Oesx7P946GzJA/viewform?usp=sf_link" style="color: black">FeedBack Form</a>
+    </div>
+  </nav>
+<div class="container">
+  <ul class="list-group">
+        <li class="main-item list-group-item d-flex justify-content-between">
+          <%=sub%>
+        </li>
+        <%resources.forEach(function(resource){%>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <a title="<%=sub%> <%=resource.name%>" href="/<%=sub%>/<%=resource.name%>">
+          <%=resource.name%>
+          </a>
+        </li>
+        <% }) %>
+      </ul>
+  </div>
+  <footer class="page-footer font-small blue pt-4">
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="/"> DTU FEC</a>
+    </div>
+      <!-- Copyright -->
+</footer> 
+</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+</html>

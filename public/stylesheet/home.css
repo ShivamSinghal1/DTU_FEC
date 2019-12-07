@@ -1,0 +1,46 @@
+		body{
+			font-family: Roboto;
+			background: linear-gradient(-45deg, #ee7752 , #e73c7e, #23a6d5, #23d5ab 80%);
+		}
+		.list-group-item{
+      margin: 1em;
+    }
+    .subject_name{
+    	color: rgb(6, 79, 214);
+    }
+    .container{
+      margin-top: 1em;
+      padding-bottom: 1em;
+    }
+    .list-group-item{
+      background-color: rgb(162, 247, 250);
+      color: DodgerBlue;
+      font-weight: bold;
+    }
+    .list-group .main-item {
+      background-color: rgb(15, 216, 242);
+      color: White;
+      letter-spacing: .05em;
+      text-align: center;
+      font-size: 28px;
+    }
+    .btn {
+      background-color: DodgerBlue;
+      border: none;
+      padding: 6px 15px;
+      cursor: pointer;
+      font-size: 15px;
+      color: white;
+    }
+    .list-group-item{
+      font-size: 18px;
+    }
+		h6{
+			margin-top: 1em;
+			margin-left: 1.5em;
+			font-weight: bold;
+		}
+
+		.feedback{
+			color: black
+		}		

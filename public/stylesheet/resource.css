@@ -1,0 +1,40 @@
+body{
+/*      background-image: url("/img/background.jpg");
+      background-size: cover;
+      opacity: 0.5em;*/
+        font-family: Roboto;
+        background: linear-gradient(45deg, #ee7752 , #e73c7e, #23a6d5, #23d5ab 80%);
+    }
+    .list-group-item{
+      margin: 1em;
+    }
+    .container{
+      margin-top: 1em;
+      padding-bottom: 1em;
+    }
+    .list-group-item{
+      background-color: rgb(162, 247, 250);
+      color: rgb(6, 79, 214);
+      font-weight: bold;
+    }
+    .list-group .main-item {
+      background-color: rgb(15, 216, 242);
+      color: white;
+      text-align: center;
+      font-size: 28px;
+    }
+    .btn {
+      background-color: DodgerBlue;
+      border: none;
+      padding: 6px 15px;
+      cursor: pointer;
+      font-size: 15px;
+      color: white;
+    }
+    .list-group-item{
+      font-size: 18px;
+    }
+
+    .dropdown-menu .disabled{
+      background-color: rgb(240, 240, 240);
+    }

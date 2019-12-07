@@ -1,0 +1,41 @@
+    .card{
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+    body{
+        font-family: Roboto;
+        background: linear-gradient(0deg, #ee7752 , #e73c7e, #23a6d5, #23d5ab 80%);
+    }
+    h1{
+      text-align: center;
+      color: rgb(164, 11, 191);
+    }
+
+    .dropdown-menu .disabled{
+      background-color: rgb(240, 240, 240);
+    }
+    .container{
+      margin-top: 1em;
+      padding-bottom: 1em;
+    }
+    .list-group-item{
+      margin: 1em;
+      background-color: rgb(162, 247, 250);
+      color: rgb(48, 4, 130);
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .list-group .main-item {
+      background-color: rgb(15, 216, 242);
+      color: white;
+      text-align: center;
+      font-size: 28px;
+    }
+    .btn {
+      background-color: DodgerBlue;
+      border: none;
+      padding: 6px 15px;
+      cursor: pointer;
+      font-size: 15px;
+      color: white;
+    }
